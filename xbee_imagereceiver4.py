@@ -28,8 +28,9 @@ while len(received_bytes) < image_size:
         print(f"Recebido: {len(received_bytes)}/{image_size} bytes")
 
 # Salva a imagem
-with open("imagem_recebida3_2008_4.jpg", "wb") as img_file:
+with open("imagem_recebida4.jpg", "wb") as img_file:
     img_file.write(received_bytes)
 
 print(f"Imagem salva com sucesso ({len(received_bytes)} bytes)")
+
 ser.close()
