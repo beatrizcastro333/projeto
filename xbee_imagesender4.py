@@ -8,7 +8,7 @@ BAUDRATE = 115200
 CHUNK_SIZE = 100 
 
 # Abre e converte a imagem para escala de cinza
-with Image.open("imagem3.jpg") as img:
+with Image.open("imagem4.jpg") as img:
     gray_img = img.convert("L") 
 
     # Salva na memória
@@ -40,5 +40,6 @@ elapsed = end - start
 print(f"\nImagem enviada com sucesso em {elapsed:.2f} segundos.")
 
 ser.close()
+
 
 
